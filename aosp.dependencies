@@ -14,11 +14,5 @@
     "target_path": "vendor/xiaomi/beryllium",
     "branch": "eleven",
     "remote": "pixel-devices-blobs"
-  },
-  {
-    "repository": "lakgarg/packages_apps_GoogleCameraGo",
-    "target_path": "packages/apps/GoogleCameraGo",
-    "branch": "master",
-    "remote": "gitlab"
   }
 ]
