@@ -25,9 +25,11 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/beryllium
 TARGET_KERNEL_CONFIG := beryllium_defconfig
-TARGET_KERNEL_CLANG_VERSION := prelude
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
-KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    LLVM=1 \
+    LLVM_IAS=1
+TARGET_KERNEL_CLANG_VERSION := adrian
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/adrian-clang-2
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
